@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Website Time Tracker</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <div>
+          <p class="eyebrow">Today since 5:00 AM</p>
+          <h1 id="totalTime">0m</h1>
+        </div>
+        <button id="refreshButton" class="icon-button" type="button" title="Refresh" aria-label="Refresh">
+          <span aria-hidden="true">↻</span>
+        </button>
+      </header>
+
+      <section class="summary">
+        <div>
+          <span class="label">Top site</span>
+          <strong id="topSite">No activity yet</strong>
+        </div>
+        <div>
+          <span class="label">Sites tracked</span>
+          <strong id="siteCount">0</strong>
+        </div>
+      </section>
+
+      <section class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Website</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody id="siteRows">
+            <tr>
+              <td colspan="2" class="empty">Open a website to start tracking.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer class="footer">
+        <button id="resetTodayButton" class="secondary" type="button">Reset today</button>
+        <button id="optionsButton" class="secondary" type="button">Options</button>
+      </footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
