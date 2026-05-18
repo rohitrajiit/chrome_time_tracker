@@ -9,7 +9,7 @@ Daily totals start at **5:00 AM local time** and end at 4:59:59 AM the next day.
 1. Open `chrome://extensions` in Chrome.
 2. Enable **Developer mode**.
 3. Click **Load unpacked**.
-4. Select this folder: `/Users/rohitraj/codex-gui/time tracker`.
+4. Select this folder: `./time tracker`.
 
 ## What it tracks
 
